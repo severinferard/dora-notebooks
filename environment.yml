@@ -78,7 +78,7 @@ dependencies:
   - numpy=1.22.3
   - numpy-base=1.22.3
   - openpyxl=3.0.9
-  - openssl=1.1.1o
+  - openssl
   - packaging=21.3
   - pandas=1.4.2
   - pandocfilters=1.5.0
@@ -125,5 +125,5 @@ dependencies:
   - widgetsnbextension=3.5.2
   - xz=5.2.5
   - zeromq=4.3.4
-  - zlib=1.2.12
+  - zlib
   - zstd=1.5.2
