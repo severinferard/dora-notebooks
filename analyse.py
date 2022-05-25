@@ -216,9 +216,9 @@ def evaluate_beacon(positions: List[Tuple[float, float, float]], beacons: List[D
 	# 			beacon["lap"] = beacon["time"] - last_valided["time"] if last_valided else beacon["time"]
 	return (ret)
 
-def remove_incorrect(positions, max_radius):
-	ret = [positions[i] for i in range(len(positions) - 1) if haversine_distance((positions[i][0], positions[i][1]), (positions[i + 1][0], positions[i + 1][1])) < max_radius]
-	return ret
+# def remove_incorrect(positions, max_radius):
+# 	ret = [positions[i] for i in range(len(positions) - 1) if (haversine_distance((positions[i][0], positions[i][1]), (positions[i + 1][0], positions[i + 1][1]) / (positions[i + 1][2] - positions[i][2]))) < max_radius]
+# 	return ret
 
 def remove_duplicates(arr, dup_threshold):
 	i = 0
